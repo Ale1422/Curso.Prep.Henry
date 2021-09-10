@@ -27,12 +27,12 @@ function numberOfCharacters(string) {
 
   for(var i=0 ; i<string.length ; i++){
     if(!obj[string[i]]){
-      obj[string[i]] = 1 
-    } else {
+      obj[string[i]] = 0 
+    } 
       obj[string[i]] = obj[string[i]] + 1
     }
     return obj
-  }
+  
 }
 
 
@@ -43,7 +43,7 @@ function capToFront(s) {
   //Escribe tu código aquí
   var mayúsculas = ''
   var minusculas = ''
-  for ( i = 0 ; s.length ; i ++){
+  for ( i = 0 ; i < s.length ; i ++){
       if (s[i] === s[i].toUpperCase()){
         mayúsculas = mayúsculas + s [i];
       }else{
